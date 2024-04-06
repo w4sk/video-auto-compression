@@ -47,8 +47,8 @@ async def process_file(input_file, output_file, show_result):
 
 def main():
     parser = argparse.ArgumentParser(description='ffmpeg test')
-    parser.add_argument('-i', '--input', required=True, help='input file path')
-    parser.add_argument('-o', '--output', required=True, help='output file path')
+    parser.add_argument('-i', '--input', required=True, help='input file/dir path')
+    parser.add_argument('-o', '--output', required=True, help='output file/dir path')
     parser.add_argument('-s', '--show', action='store_true', help='show ffmpeg output')
     
     args = parser.parse_args()
