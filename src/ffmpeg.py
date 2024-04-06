@@ -39,8 +39,8 @@ async def process_file(input_file, output_file, show_result):
         if show_result:
             input_size = os.path.getsize(input_file)
             output_size = os.path.getsize(output_file)
-            print(f"input file size: {convert_size(input_size)} bites")
-            print(f"output file size: {convert_size(output_size)} bites")
+            print(f"input file size: {convert_size(input_size)}")
+            print(f"output file size: {convert_size(output_size)}")
     else:
         print("エラーが発生しました")
         print(stderr.decode())    
